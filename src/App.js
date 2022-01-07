@@ -15,7 +15,7 @@ const getDatafromLS=()=>{
 
 export const App = () => {
 
-  // main array of objects state || books state || books array of objects
+  // main  array of objects
   const [books, setbooks]=useState(getDatafromLS());
 
   // input field states
@@ -41,7 +41,7 @@ export const App = () => {
     setGender('')
   }
 
-  // delete book from LS
+  // delete  from LS
   const deleteBook=(age)=>{
     const filteredBooks=books.filter((element,index)=>{
       return element.age !== age
